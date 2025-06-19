@@ -10,21 +10,139 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+      font-family:"Figtree-ExtraBold" ;
+      src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+      
+    }
+     @font-face {
+      font-family:"Figtree-Medium" ;
+      src: url(assets/fonts/static/Figtree-Medium.ttf) format('truetype');
+  
+    }
+     @font-face {
+      font-family:"Figtree-Italic-VariableFont_wght" ;
+      src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf)format('truetype');
+    }
+     @font-face {
+      font-family:"Figtree-VariableFont_wght" ;
+      src: url(assets/fonts/Figtree-VariableFont_wght.ttf)format('truetype')
+      ;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body{
+      padding: 4em;
+      height: 100vh;
+
+      margin: 0;
+    
+     
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+   
+    .blogger{
+      background-color: hsl(47, 89%, 63%);
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      
+    }
+    main{
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 15px;
+    }
+    main img{
+      display: block;
+    }
+    main .desc{
+      display: inline-block;
+      background-color: hsl(45, 93%, 66%);
+      font-family:"Figtree-ExtraBold" ;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+       
+    }
+    time{
+      display: block;
+      font-family: "Figtree-VariableFont_wght";
+      font-weight: 500;
+      color: rgb(91, 91, 91);
+      margin: 10px 0;
+
+    }
+    main h1 {
+      font-family: "Figtree-ExtraBold";
+      margin-bottom: 15px ;
+    }
+    main h1:hover{
+      color: rgb(243, 219, 107);
+      cursor: pointer;
+    }
+    article{
+     color:  rgb(146, 146, 146);
+     font-family: "Figtree-VariableFont_wght";
+    }
+    main figure figcaption{
+      display: inline;
+      font-family:"Figtree-ExtraBold" ;
+      margin-left: 10px;
+      padding: 0;
+    }
+    main figure {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      margin-top: 20px;
+
+      
+    }
+    main figure img {
+      margin: 0;
+      width: 30px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
+  <section class="blogger">
 
-  Learning
+    <main>
+      <img src="assets/images/illustration-article.svg" alt="">
+      <p class="desc">Learning</p>
+      <time datetime="">Published 21 Dec 2023</time>
+      <h1>HTML & CSS foundations</h1>
+      <article>
+         These languages are the backbone of every<br>
+          website, defining structure, content, and<br>
+           presentation.
+      </article>
+      <figure>
+        <img src="assets\images\image-avatar.webp" alt="">
+        <figcaption>Greg Hooper</figcaption>
+      </figure>
 
-  Published 21 Dec 2023
+    </main>
 
-  HTML & CSS foundations
+  </section>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+  
 
-  Greg Hooper
+  
+
+ 
+
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
